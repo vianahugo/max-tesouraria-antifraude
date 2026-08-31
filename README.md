@@ -6,6 +6,13 @@ Agente de tesouraria e prevenção a fraude para pequenas e médias empresas.
 ![Python](https://img.shields.io/badge/python-3.11%2B-blue)
 ![Licença](https://img.shields.io/badge/licença-MIT-green)
 
+<!-- IMAGEM 1 — a mais importante. Use o GIF se tiver; senão, o painel de caixa.
+     Grave a navegação pelas quatro abas, 10 a 15 segundos, 1280px de largura. -->
+![Demonstração do MAX](assets/demo.gif)
+
+> Duas exposições na mesma tela: R$ 32.300,00 de furo de caixa projetado e R$ 41.100,00
+> em pagamentos com indícios de fraude.
+
 ---
 
 ## O problema
@@ -33,6 +40,10 @@ O MAX quantifica as duas exposições da empresa e age sobre as duas.
 No cenário de demonstração, a exposição a fraude é maior que o próprio furo de caixa.
 Reter dois pagamentos suspeitos protege mais capital do que otimizar qualquer taxa.
 
+<!-- IMAGEM 2 — aba Caixa inteira: os quatro indicadores no topo, o gráfico de trajetória
+     do saldo cruzando o zero, a agenda e a cobertura recomendada. -->
+![Painel de caixa com a trajetória do saldo e a cobertura recomendada](assets/painel-caixa.png)
+
 ## O que diferencia este projeto
 
 **Segurança em código, não em prompt.** As restrições críticas não dependem de instruções
@@ -40,6 +51,10 @@ ao modelo. Um módulo dedicado bloqueia prompt injection, exfiltração de dados
 transacionais antes da chamada ao modelo, e mascara dados identificáveis depois dela.
 O mapeamento das regras para o OWASP Top 10 para Aplicações com LLM está em
 [`docs/06-seguranca.md`](docs/06-seguranca.md).
+
+<!-- IMAGEM 3 — a mais valiosa do repositório. Aba Segurança com o TRX-005 expandido,
+     mostrando o selo CRÍTICO 100/100 e as regras R01, R02, R04 com a justificativa. -->
+![Análise antifraude com as regras acionadas e a justificativa de cada uma](assets/painel-seguranca.png)
 
 **Verificação de ancoragem numérica.** Todo valor monetário citado na resposta é extraído
 e comparado com o conjunto de valores presentes no contexto calculado pelo backend. Um
@@ -69,7 +84,15 @@ violações detectadas e latência, sempre após o mascaramento de dados identif
 | Respostas com valor sem ancoragem | 0 |
 | Testes unitários | 65 |
 
-Relatório completo em [`docs/04-metricas.md`](docs/04-metricas.md), gerado na última execução.
+Relatório completo em [`docs/04-metricas.md`](docs/04-metricas.md), gerado na última execução
+com o provedor `offline`, que torna o resultado reprodutível por qualquer pessoa que clone o
+repositório. A mesma bateria roda contra modelos reais com `python evaluate.py --provider groq`.
+
+<!-- IMAGEM 4 — aba Consultoria com uma tentativa de prompt injection bloqueada,
+     mostrando o aviso vermelho com a categoria e a regra acionada. -->
+![Tentativa de prompt injection bloqueada pelo guardrail de entrada](assets/bloqueio-injection.png)
+
+O bloqueio acontece antes da chamada ao modelo e fica registrado na trilha de auditoria.
 
 ## Como executar
 
@@ -119,6 +142,7 @@ entregue pronto no contexto e verificado na saída.
 
 ```
 max-tesouraria-antifraude/
+├── assets/                           # capturas de tela e GIF de demonstração
 ├── data/
 │   ├── perfil_empresa.json           # perfil da empresa fictícia
 │   ├── linhas_credito.json           # catálogo de crédito com taxas
@@ -154,6 +178,12 @@ max-tesouraria-antifraude/
 │   └── test_fraud_engine.py
 └── evaluate.py                       # avaliação automatizada
 ```
+
+## Demonstração em vídeo
+
+<!-- Publique no YouTube como não listado e cole o link abaixo.
+     Evite Google Drive, que costuma exigir permissão de acesso. -->
+[Assista à demonstração de 3 minutos](COLE_O_LINK_AQUI)
 
 ## Dados
 
