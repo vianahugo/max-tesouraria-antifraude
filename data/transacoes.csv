@@ -1,0 +1,13 @@
+transacao_id,data,descricao,categoria,beneficiario_id,valor,tipo,status,canal_solicitacao
+TRX-001,2026-05-01,Recebimento de vendas no balcao,Receita,,12000.00,entrada,concluido,sistema
+TRX-002,2026-05-04,Pagamento Metalurgica Souza - NF 8871,Insumos,BEN-001,8000.00,saida,concluido,portal_fornecedor
+TRX-003,2026-05-08,Recebimento de boleto - Cliente Alfa,Receita,,6500.00,entrada,concluido,sistema
+TRX-004,2026-05-13,Energia eletrica - unidade fabril,Utilidades,BEN-005,4200.00,saida,agendado,debito_automatico
+TRX-005,2026-05-16,Pagamento Transportadora Rota Norte - NF 2214,Logistica,BEN-002,18700.00,saida,agendado,email
+TRX-006,2026-05-18,Folha de pagamento,Pessoal,BEN-006,25000.00,saida,agendado,sistema
+TRX-007,2026-05-18,Aluguel do galpao industrial,Infraestrutura,BEN-003,5000.00,saida,agendado,sistema
+TRX-008,2026-05-19,Manutencao preventiva de maquinario,Operacional,BEN-004,3000.00,saida,agendado,portal_fornecedor
+TRX-009,2026-05-20,Reforma da prensa hidraulica,Operacional,BEN-004,9600.00,saida,previsto,portal_fornecedor
+TRX-010,2026-05-21,Adiantamento a fornecedor - compra de aco,Insumos,BEN-007,22400.00,saida,previsto,whatsapp
+TRX-011,2026-05-25,Recebimento de cartoes de credito,Receita,,45000.00,entrada,previsto,sistema
+TRX-012,2026-05-28,Recebimento NF 402 - Cliente Beta,Receita,,15000.00,entrada,previsto,sistema

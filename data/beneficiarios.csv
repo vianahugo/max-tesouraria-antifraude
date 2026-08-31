@@ -1,0 +1,8 @@
+beneficiario_id,nome,documento,titular_conta,banco,agencia,conta,data_cadastro,ultima_alteracao_conta,canal_ultima_alteracao,qtd_pagamentos_anteriores,valor_medio_historico
+BEN-001,Metalurgica Souza Insumos LTDA,45.221.789/0001-12,Metalurgica Souza Insumos LTDA,Banco 341,1234,56789-0,2023-02-14,2023-02-14,cadastro_presencial,18,7850.00
+BEN-002,Transportadora Rota Norte ME,22.908.115/0001-45,Marcos A. Ferreira,Banco 260,0001,88123-4,2023-06-01,2026-05-09,email,9,6200.00
+BEN-003,Imobiliaria Central Patrimonial LTDA,31.774.020/0001-88,Imobiliaria Central Patrimonial LTDA,Banco 033,4455,10233-7,2022-11-03,2022-11-03,cadastro_presencial,29,5000.00
+BEN-004,Assistec Manutencao Industrial LTDA,58.310.667/0001-21,Assistec Manutencao Industrial LTDA,Banco 237,7788,45120-9,2024-01-22,2024-01-22,portal_fornecedor,11,3100.00
+BEN-005,Companhia Energetica Regional S.A.,04.128.563/0001-05,Companhia Energetica Regional S.A.,Banco 001,3030,11002-3,2021-08-10,2021-08-10,debito_automatico,41,4050.00
+BEN-006,TechIndustrial Pecas LTDA - Folha de Pagamento,12.345.678/0001-90,TechIndustrial Pecas LTDA,Banco 237,7788,45120-1,2021-05-04,2021-05-04,cadastro_presencial,52,24800.00
+BEN-007,Premium Aco Distribuidora EIRELI,77.402.199/0001-60,J. R. Nogueira Servicos ME,Banco 380,0001,29455-8,2026-05-11,2026-05-11,whatsapp,0,0.00

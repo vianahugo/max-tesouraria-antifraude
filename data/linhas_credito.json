@@ -1,0 +1,42 @@
+[
+  {
+    "codigo": "ANT-CARTAO",
+    "nome": "Antecipação de Recebíveis de Cartão",
+    "tipo": "Antecipação",
+    "taxa_mensal": 0.0185,
+    "prazo_liberacao": "D+0",
+    "limite_disponivel": 45000.0,
+    "descricao": "Antecipa a agenda de recebíveis de cartão de crédito já constituída. Não gera novo endividamento, apenas adianta um valor a receber.",
+    "requisito": "Depende da existência de recebíveis futuros de cartão."
+  },
+  {
+    "codigo": "GIRO-PARC",
+    "nome": "Capital de Giro Parcelado",
+    "tipo": "Empréstimo",
+    "taxa_mensal": 0.035,
+    "prazo_liberacao": "D+2",
+    "limite_disponivel": 120000.0,
+    "descricao": "Crédito parcelado em até 24 meses para necessidades estruturais de caixa.",
+    "requisito": "Análise de crédito e formalização de contrato."
+  },
+  {
+    "codigo": "CONTA-GAR",
+    "nome": "Conta Garantida PJ",
+    "tipo": "Crédito rotativo",
+    "taxa_mensal": 0.058,
+    "prazo_liberacao": "Imediato",
+    "limite_disponivel": 60000.0,
+    "descricao": "Limite rotativo vinculado à conta corrente, com juros cobrados apenas sobre o saldo utilizado.",
+    "requisito": "Limite pré-aprovado vigente."
+  },
+  {
+    "codigo": "CHEQUE-ESP",
+    "nome": "Cheque Especial PJ",
+    "tipo": "Crédito rotativo",
+    "taxa_mensal": 0.089,
+    "prazo_liberacao": "Imediato",
+    "limite_disponivel": 30000.0,
+    "descricao": "Limite emergencial de uso automático quando o saldo fica negativo. Maior custo efetivo do catálogo.",
+    "requisito": "Nenhum. Uso automático."
+  }
+]

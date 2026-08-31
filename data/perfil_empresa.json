@@ -1,0 +1,17 @@
+{
+  "razao_social": "TechIndustrial Peças LTDA",
+  "nome_fantasia": "TechIndustrial",
+  "cnpj": "12.345.678/0001-90",
+  "setor": "Indústria metalúrgica",
+  "porte": "Média empresa",
+  "funcionarios": 34,
+  "faturamento_medio_mensal": 150000.0,
+  "custo_fixo_mensal": 62000.0,
+  "saldo_atual_conta": 14500.0,
+  "perfil_risco": "Conservador",
+  "meta_financeira": "Reduzir o custo de capital de giro e formar reserva equivalente a 3 meses de custo fixo",
+  "responsavel_financeiro": "Diretoria Administrativo-Financeira",
+  "alcada_aprovacao_pagamento": 20000.0,
+  "politica_interna": "Pagamentos acima da alçada exigem dupla aprovação. Alteração de dados bancários de fornecedor exige confirmação por telefone em número previamente cadastrado.",
+  "observacao": "Dados fictícios criados para o desafio DIO + Bradesco. Nenhuma informação real de cliente foi utilizada."
+}
