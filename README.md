@@ -175,7 +175,7 @@ max-tesouraria-antifraude/
 
 <!-- Publique no YouTube como não listado e cole o link abaixo.
      Evite Google Drive, que costuma exigir permissão de acesso. -->
-[Assista à demonstração de 3 minutos](https://drive.google.com/file/d/1XxgR6rZ-YcRRAa_hVdiWq4dG8lP22iX3/view?usp=sharing)
+[Assista à demonstração de 3 minutos](https://youtu.be/IkG0_ZM0Wgc)
 
 ## Dados
 
