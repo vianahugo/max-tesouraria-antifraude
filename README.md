@@ -5,6 +5,7 @@ Agente de tesouraria e prevenção a fraude para pequenas e médias empresas.
 ![CI](https://github.com/vianahugo/max-tesouraria-antifraude/actions/workflows/ci.yml/badge.svg)
 ![Python](https://img.shields.io/badge/python-3.11%2B-blue)
 ![Licença](https://img.shields.io/badge/licença-MIT-green)
+[![Abrir no Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://max-tesouraria-antifraude-qojtvtuesb9bv9hz5kbdad.streamlit.app/)
 
 ![Demonstração do MAX](assets/demo.gif)
 
@@ -87,6 +88,8 @@ integração contínua a cada push.
 O bloqueio acontece antes da chamada ao modelo e fica registrado na trilha de auditoria.
 
 ## Como executar
+
+A aplicação está publicada em [max-tesouraria-antifraude.streamlit.app](https://max-tesouraria-antifraude-qojtvtuesb9bv9hz5kbdad.streamlit.app/). Para rodar localmente:
 
 ```bash
 git clone https://github.com/vianahugo/max-tesouraria-antifraude.git
@@ -173,8 +176,6 @@ max-tesouraria-antifraude/
 
 ## Demonstração em vídeo
 
-<!-- Publique no YouTube como não listado e cole o link abaixo.
-     Evite Google Drive, que costuma exigir permissão de acesso. -->
 [Assista à demonstração de 3 minutos](https://youtu.be/IkG0_ZM0Wgc)
 
 ## Dados
@@ -189,6 +190,11 @@ O MAX é um protótipo consultivo. Não executa movimentação financeira, não 
 identificáveis, não substitui os controles internos da empresa e não se conecta a sistemas
 bancários reais. As regras antifraude sinalizam indícios para verificação humana, não
 constituem prova de fraude.
+
+## Contexto
+
+Projeto final do Bootcamp DNA Dados e Cybersegurança, iniciativa da DIO em parceria com o
+Banco Bradesco.
 
 ## Licença
 
