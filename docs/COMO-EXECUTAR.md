@@ -134,7 +134,7 @@ Camada gratuita generosa e resposta rápida.
 
 ```
 LLM_PROVIDER=groq
-GROQ_API_KEY=cole_sua_chave_aqui
+GROQ_API_KEY=sua_chave
 ```
 
 ### Opção B — Google Gemini
@@ -144,7 +144,7 @@ GROQ_API_KEY=cole_sua_chave_aqui
 
 ```
 LLM_PROVIDER=gemini
-GEMINI_API_KEY=cole_sua_chave_aqui
+GEMINI_API_KEY=sua_chave
 ```
 
 ### Opção C — Ollama (100% local, sem enviar dados para fora)
@@ -173,10 +173,10 @@ orçamento de tokens em raciocínio interno antes de produzir a resposta final, 
 leva vários minutos por pergunta e frequentemente estoura o tempo limite. Quando isso
 acontece, a aplicação recorre ao motor determinístico e informa o motivo no chat. Modelos
 de instrução como `llama3.1:8b`, `qwen2.5:7b-instruct` ou `mistral:7b-instruct` respondem
-em segundos e são a escolha certa para a demonstração.
+em segundos.
 
 O botão Testar o provedor, na barra lateral, envia uma requisição curta e mostra o tempo de
-resposta. Use antes de gravar o vídeo.
+resposta.
 
 ---
 
@@ -196,7 +196,9 @@ resposta. Use antes de gravar o vídeo.
 
 ## Publicar na Streamlit Community Cloud
 
-Deixa o projeto acessível por link, sem instalação. Vale muito para quem for avaliar.
+A versão publicada do projeto está em https://max-tesouraria-antifraude-qojtvtuesb9bv9hz5kbdad.streamlit.app/
+
+Para publicar a sua própria cópia:
 
 1. Envie o repositório para o GitHub com visibilidade pública
 2. Acesse `https://share.streamlit.io` e entre com a conta do GitHub
@@ -211,8 +213,6 @@ no ambiente publicado, adicione a chave em Settings, Secrets, no formato:
 LLM_PROVIDER = "groq"
 GROQ_API_KEY = "sua_chave"
 ```
-
-Depois de publicado, cole o link no topo do README.
 
 Não publique o arquivo `.env`. Ele já está no `.gitignore`.
 

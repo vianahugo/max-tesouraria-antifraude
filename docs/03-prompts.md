@@ -94,7 +94,8 @@ confirmacao por telefone em numero ja cadastrado.
 
 ## Interações reais
 
-As respostas abaixo foram produzidas pela execução do agente, não redigidas à mão.
+As respostas abaixo foram produzidas pela execução do agente, não redigidas à mão. As datas
+variam a cada execução, porque o cenário é recalculado em relação ao dia corrente.
 
 ### Projeção de caixa
 

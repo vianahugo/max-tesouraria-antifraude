@@ -49,7 +49,7 @@ protege mais capital do que otimizar uma taxa de juros.
 | Transação | Valor | Classificação | Sinais |
 |---|---|---|---|
 | TRX-005 | R$ 18.700,00 | CRÍTICO (100/100) | Conta alterada há poucos dias, solicitação por e-mail, titular divergente da razão social, valor acima do histórico |
-| TRX-010 | R$ 22.400,00 | CRÍTICO (75/100) | Beneficiário recém-cadastrado sem histórico, valor acima da alçada, solicitação por WhatsApp |
+| TRX-010 | R$ 22.400,00 | CRÍTICO (100/100) | Beneficiário recém-cadastrado sem histórico, titular divergente, valor acima da alçada, solicitação por WhatsApp |
 | TRX-009 | R$ 9.600,00 | MÉDIO (20/100) | Valor acima do padrão histórico do fornecedor |
 
 ### Datas sempre atuais
@@ -124,11 +124,16 @@ na resposta que não esteja nele reprova a resposta.
 
 ### Exemplo de contexto montado
 
+As datas abaixo são de uma execução específica. Como o cenário se desloca em relação ao dia
+corrente, cada execução mostra datas diferentes, mantendo os mesmos intervalos e valores.
+
 ```
 [CONTEXTO CALCULADO PELO BACKEND]
 Empresa: TechIndustrial Peças LTDA | Setor: Indústria metalúrgica | Perfil de risco: Conservador
 Data de referencia: 30/08/2026 | Horizonte analisado: 21 dias
 Saldo atual em conta: R$ 14.500,00
+Faturamento medio mensal: R$ 150.000,00
+Custo fixo mensal: R$ 62.000,00
 Alcada de aprovacao: R$ 20.000,00
 
 PROJECAO DE CAIXA (pagamentos suspeitos retidos):
