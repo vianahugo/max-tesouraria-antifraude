@@ -34,7 +34,7 @@ MODELO = os.getenv("LLM_MODEL", "").strip()
 OLLAMA_URL = os.getenv("OLLAMA_URL", "http://localhost:11434").rstrip("/")
 GROQ_API_KEY = os.getenv("GROQ_API_KEY", "").strip()
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "").strip()
-TIMEOUT_LLM = int(os.getenv("TIMEOUT_LLM", "300"))
+TIMEOUT_LLM = int(os.getenv("TIMEOUT_LLM", "600"))
 
 HORIZONTE_DIAS = int(os.getenv("HORIZONTE_DIAS", "21"))
 DIAS_ANCORA_PASSADO = int(os.getenv("DIAS_ANCORA_PASSADO", "12"))

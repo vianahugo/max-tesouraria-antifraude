@@ -300,7 +300,7 @@ def listar_modelos(provider: str) -> list[str]:
     return obter_agente(provider).provider.listar_modelos()
 
 
-def topbar(provider: str, modelo: str, ativo: bool, critico: bool) -> None:
+def topbar(provider: str, modelo: str, ativo: bool, critico: bool, empresa: str, periodo: str) -> None:
     pill_status = (
         f'<div class="topbar-pill ok">● {provider.upper()} · {modelo}</div>'
         if ativo
@@ -314,11 +314,13 @@ def topbar(provider: str, modelo: str, ativo: bool, critico: bool) -> None:
     st.markdown(
         f'<div class="topbar">'
         f'<div class="topbar-logo"><span>MAX</span><sub>Motor de análise de exposição</sub></div>'
-        f'<div class="topbar-nome">TechIndustrial Peças · Exercício 09/2026</div>'
+        f'<div class="topbar-nome">{empresa} · Exercício {periodo}</div>'
         f'{pill_status}{pill_risco}'
         f"</div>",
         unsafe_allow_html=True,
     )
+
+
 def ind_card(rotulo: str, valor: str, nota: str = "", classe: str = "") -> str:
     return (
         f'<div class="ind-card">'
@@ -790,6 +792,8 @@ def main() -> None:
         agente.provider.modelo,
         agente.provider.disponivel(),
         critico,
+        contexto.base.perfil.get("nome_fantasia", contexto.base.perfil["razao_social"]),
+        contexto.base.referencia.strftime("%m/%Y"),
     )
 
     caixa, conversa, seguranca, auditoria = st.tabs(
