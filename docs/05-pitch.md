@@ -69,4 +69,5 @@ O resultado é uma aplicação que combina análise financeira, mecanismos de se
 
 ## Link do vídeo
 
-Cole aqui o link após a gravação.
+https://youtu.be/IkG0_ZM0Wgc
+https://drive.google.com/file/d/1XxgR6rZ-YcRRAa_hVdiWq4dG8lP22iX3/view?usp=sharing
